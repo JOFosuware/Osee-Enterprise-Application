@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="/images/logo.jpg" type="image/x-icon">
+    <title>Osee Enterprise Application</title>
+    <link rel="stylesheet" href="/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/css/dashboard.css">
+    <script defer src="/js/fontawesome-all.min.js"></script>
+</head>
+<body>
+    <!--Dashboard nagivation for small and medium screen-->
+    <nav class="navbar navbar-dark bg-dark navbar-expand-lg">
+        <div class="container-fluid">
+            <div class="navbar-brand">
+                <img src="/images/logo.jpg" alt="logo" width="30px" height="30px"><span class="align-middle lead">
+                    Osee Enterprise Application
+                </span>
+            </div>
+            <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#dashnavigation" aria-expanded="false" aria-controls="dashnavigation" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="dashnavigation">
+                <ul class="navbar-nav d-lg-none">
+                    <li aria-hidden="true" class="nav-item">
+                        <a href="#" class="nav-link active" id="dashboard" aria-current="page"><i aria-hidden="true" class="fas fa-tachometer-alt me-2"></i>Dashboard</a>
+                    </li>
+                    <li aria-hidden="true" class="nav-item">
+                        <div class="dropend">
+                            <a href="#" class="w-25 dropdown-toggle nav-link" id="product-nav" data-bs-toggle="dropdown" aria-expanded="false">
+                              <i aria-hidden="true" class="fas fa-boxes me-2"></i>  Product
+                            </a>
+                            <div class="dropdown-menu w-25" aria-labelledby="product-nav">
+                                <a href="#add-product-pane" class="dropdown-item"><i aria-hidden="true" class="fas fa-plus me-2"></i>Add Product</a>
+                                <div class="dropdown-divider bg-light"></div>
+                                <a href="#update-product-pane" class="dropdown-item"><i aria-hidden="true" class="fas fa-edit me-2"></i>Update Product</a>
+                                <div class="dropdown-divider bg-light"></div>
+                                <a href="#" class="dropdown-item"><i aria-hidden="true" class="fas fa-minus me-2"></i>Remove Product</a>
+                            </div>
+                        </div>
+                    </li>
+                    <li aria-hidden="true" class="nav-item">
+                        <div class="dropend">
+                            <a href="#" class="w-25 dropdown-toggle nav-link" id="contract-nav" data-bs-toggle="dropdown" aria-expanded="false">
+                              <i aria-hidden="true" class="fas fa-file-signature me-2"></i>  Contract
+                            </a>
+                            <div class="dropdown-menu w-25" aria-labelledby="contract-nav">
+                                <a href="" class="dropdown-item"><i aria-hidden="true" class="fas fa-plus me-2"></i>New Contract</a>
+                                <div class="dropdown-divider bg-light"></div>
+                                <a href="" class="dropdown-item"><i aria-hidden="true" class="fas fa-edit me-2"></i>Renew Contract</a>
+                                <div class="dropdown-divider bg-light"></div>
+                                <a href="" class="dropdown-item"><i aria-hidden="true" class="fas fa-money-check me-2"></i>Payment</a>
+                                <div class="dropdown-divider bg-light"></div>
+                                <a href="" class="dropdown-item"><i aria-hidden="true" class="fas fa-clipboard-list me-2"></i>Complete Contract</a>
+                                <div class="dropdown-divider bg-light"></div>
+                                <a href="" class="dropdown-item"><i aria-hidden="true" class="fas fa-minus me-2"></i>Terminate Contract</a>
+                            </div>
+                        </div>
+                    </li>
+                    <li aria-hidden="true" class="nav-item">
+                        <div class="dropend">
+                            <a href="#" class="w-25 dropdown-toggle nav-link" id="contract-nav" data-bs-toggle="dropdown" aria-expanded="false">
+                              <i aria-hidden="true" class="fas fa-shopping-cart me-2"></i>  Purchase
+                            </a>
+                            <div class="dropdown-menu w-25" aria-labelledby="contract-nav">
+                                <a href="" class="dropdown-item"><i aria-hidden="true" class="fas fa-shopping-cart me-2"></i>Buy</a>
+                                <div class="dropdown-divider bg-light"></div>
+                                <a href="" class="dropdown-item"><i aria-hidden="true" class="fas fa-file-invoice me-2"></i>Invoice</a>
+                            </div>
+                        </div>
+                    </li>
+                    <li aria-hidden="true" class="nav-item">
+                        <div class="dropend">
+                            <a href="#" class="w-25 dropdown-toggle nav-link" id="contract-nav" data-bs-toggle="dropdown" aria-expanded="false">
+                              <i aria-hidden="true" class="fas fa-users me-2"></i>  Users
+                            </a>
+                            <div class="dropdown-menu w-25" aria-labelledby="contract-nav">
+                                <a href="" class="dropdown-item"><i aria-hidden="true" class="fas fa-plus me-2"></i>Add User</a>
+                                <div class="dropdown-divider bg-light"></div>
+                                <a href="" class="dropdown-item"><i aria-hidden="true" class="fas fa-edit me-2"></i>Update User</a>
+                                <div class="dropdown-divider bg-light"></div>
+                                <a href="" class="dropdown-item"><i aria-hidden="true" class="fas fa-minus me-2"></i>Remove User</a>
+                            </div>
+                        </div>
+                    </li>
+                    <li aria-hidden="true" class="nav-item">
+                        <div class="dropend">
+                            <a href="#" class="w-25 dropdown-toggle nav-link" id="contract-nav" data-bs-toggle="dropdown" aria-expanded="false">
+                              <i aria-hidden="true" class="fas fa-database me-2"></i>  Database
+                            </a>
+                            <div class="dropdown-menu w-25" aria-labelledby="contract-nav">
+                                <a href="" class="dropdown-item"><i aria-hidden="true" class="fas fa-copy me-2"></i>Copy Database</a>
+                                <div class="dropdown-divider bg-light"></div>
+                                <a href="" class="dropdown-item"><i aria-hidden="true" class="fas fa-edit me-2"></i>Update Database</a>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+                <div class="dropdown start-80 mt-1">
+                    <button type="button" class="btn btn-outline-light btn-sm dropdown-toggle" data-bs-toggle="dropdown" 
+                    id="logoutBtn" aria-expanded="false">Log Out</button>
+                    <ul class="dropdown-menu w-25" aria-labelledby="logoutBtn">
+                        <li aria-hidden="true" class="dropdown-item"><i aria-hidden="true" class="fas fa-mobile me-1"></i>One Device</li>
+                        <div class="dropdown-divider bg-light"></div>
+                        <li aria-hidden="true" class="dropdown-item"><i aria-hidden="true" class="fas fa-desktop me-1"></i>
+                      <i class="fab fa-phone-tablet"></i>  All Devices</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!--Dashboard nagivation for large screen-->
+    <div class="row">
+        <div class="col-lg-2 d-none d-lg-inline-block bg-dark">
+            <ul class="nav nav-pills flex-column ms-1 lead" role="tablist">
+                <li aria-hidden="true" class="nav-item" role="presentation">
+                    <a href="#dashboard-pane" id="dashboard" data-bs-toggle="tab" role="tab" aria-controls="dashboard-pane" aria-selected="true" 
+                    class="nav-link active"><i aria-hidden="true" class="fas fa-tachometer-alt me-2"></i>Dashboard</a>
+                </li>
+                <li aria-hidden="true" class="nav-item dropend" role="presentation">
+                    <a href="#" class="nav-link dropdown-toggle w-100" id="product-lg-nav" data-bs-toggle="dropdown" aria-expanded="false">
+                     <i aria-hidden="true" class="fas fa-boxes me-2"></i>   Product
+                    </a>
+                    <div class="dropdown-menu lead" aria-labelledby="product-lg-nav">
+                        <a href="#add-product-pane" class="dropdown-item" id="add-product"
+                        data-bs-toggle="tab" aria-controls="add-product-pane" aria-selected="false" role="tab"><i aria-hidden="true" class="fas fa-plus me-2"></i>Add Product</a>
+                        <div class="dropdown-divider bg-light"></div>
+                        <a href="#update-product-pane" class="dropdown-item" id="update-product"
+                        data-bs-toggle="tab" role="tab" aria-selected="false" aria-controls="update-product-pane"><i aria-hidden="true" class="fas fa-edit me-2"></i>Update Product</a>
+                        <div class="dropdown-divider bg-light"></div>
+                        <a href="#" class="dropdown-item"><i aria-hidden="true" class="fas fa-minus me-2"></i>Remove Product</a>
+                    </div>
+                </li>
+                <li aria-hidden="true" class="nav-item dropend" role="presentation">
+                    <a class="nav-link dropdown-toggle w-100" id="contract-lg-nav" data-bs-toggle="dropdown" aria-expanded="false">
+                      <i aria-hidden="true" class="fas fa-file-signature me-2"></i>  Contract
+                    </a>
+                    <div class="dropdown-menu lead" aria-labelledby="contract-lg-nav">
+                        <a href="#" class="dropdown-item"><i aria-hidden="true" class="fas fa-plus me-2"></i>New Contract</a>
+                        <div class="dropdown-divider bg-light"></div>
+                        <a href="#" class="dropdown-item"><i aria-hidden="true" class="fas fa-edit me-2"></i>Renew Contract</a>
+                        <div class="dropdown-divider bg-light"></div>
+                        <a href="#" class="dropdown-item"><i aria-hidden="true" class="fas fa-money-check me-2"></i>Payment</a>
+                        <div class="dropdown-divider bg-light"></div>
+                        <a href="#" class="dropdown-item"><i aria-hidden="true" class="fas fa-clipboard-list me-2"></i>Complete Contract</a>
+                        <div class="dropdown-divider bg-light"></div>
+                        <a href="#" class="dropdown-item"><i aria-hidden="true" class="fas fa-minus me-2"></i>Terminate Contract</a>
+                    </div>
+                </li>
+                <li aria-hidden="true" class="nav-item dropend" role="presentation">
+                    <a class="nav-link dropdown-toggle w-100" id="product-lg-nav" data-bs-toggle="dropdown" aria-expanded="false">
+                      <i aria-hidden="true" class="fas fa-shopping-cart me-2"></i>  Purchase
+                    </a>
+                    <div class="dropdown-menu lead" aria-labelledby="product-lg-nav">
+                        <a href="#" class="dropdown-item"><i aria-hidden="true" class="fas fa-shopping-cart me-2"></i>Buy</a>
+                        <div class="dropdown-divider bg-light"></div>
+                        <a href="#" class="dropdown-item"><i aria-hidden="true" class="fas fa-file-invoice me-2"></i>Invoice</a>
+                    </div>
+                </li>
+                <li aria-hidden="true" class="nav-item dropend" role="presentation">
+                    <a class="nav-link dropdown-toggle w-100" id="product-lg-nav" data-bs-toggle="dropdown" aria-expanded="false">
+                     <i aria-hidden="true" class="fas fa-users me-2"></i>   Users
+                    </a>
+                    <div class="dropdown-menu lead" aria-labelledby="product-lg-nav">
+                        <a href="#" class="dropdown-item"><i aria-hidden="true" class="fas fa-plus me-2"></i>Add User</a>
+                        <div class="dropdown-divider bg-light"></div>
+                        <a href="#" class="dropdown-item"><i aria-hidden="true" class="fas fa-edit me-2"></i>Update User</a>
+                        <div class="dropdown-divider bg-light"></div>
+                        <a href="#" class="dropdown-item"><i aria-hidden="true" class="fas fa-minus me-2"></i>Remove User</a>
+                    </div>
+                </li>
+                <li aria-hidden="true" class="nav-item dropend" role="presentation">
+                    <a class="nav-link dropdown-toggle w-100" id="product-lg-nav" data-bs-toggle="dropdown" aria-expanded="false">
+                      <i aria-hidden="true" class="fas fa-database me-2"></i>  Database
+                    </a>
+                    <div class="dropdown-menu lead" aria-labelledby="product-lg-nav">
+                        <a href="#" class="dropdown-item"><i aria-hidden="true" class="fas fa-copy me-2"></i>Copy Database</a>
+                        <div class="dropdown-divider bg-light"></div>
+                        <a href="#" class="dropdown-item"><i aria-hidden="true" class="fas fa-edit me-2"></i>Update Database</a>
+                    </div>
+                </li>
+            </ul>
+        </div>
+        <div class="col-lg-8">
+            <div class="tab-content">
+                <div id="dashboard-pane" class="tab-pane active" role="tabpanel" aria-labelledby="dashboard">
+                    <h1 class="text-dark lead text-center">My Dashboard</h1>
+                </div>
+                <div id="add-product-pane" class="tab-pane" role="tabpanel" aria-labelledby="add-product">
+                    <h1 class="text-dark lead text-center">Add Product</h1>
+                </div>
+                <div id="update-product-pane" class="tab-pane" role="tabpanel" aria-labelledby="update-product">
+                    <h1 class="text-dark lead text-center">Update Product</h1>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

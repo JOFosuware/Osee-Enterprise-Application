@@ -1,0 +1,12 @@
+*{
+    margin:0;
+    padding: 0;
+}
+
+
+
+@media only screen and (min-width: 992px) {
+    .start-80{
+        margin-left: 87%;
+    }
+}
